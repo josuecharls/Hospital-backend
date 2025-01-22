@@ -85,7 +85,6 @@ namespace Datos.DAL
         //Aquí si usamos la Entidad (Medico)
         public static long Crear(Medico item)
         {
-            long id = 0;
             using (var db = DbConexion.Create())
             {
                 item.borrado = false;
@@ -93,7 +92,7 @@ namespace Datos.DAL
                 db.SaveChanges(); //salvar los datos
             }
 
-            return id;
+            return item.id;
         }
 
         public static void Actualizar(MedicoVMR item)
