@@ -24,7 +24,7 @@ namespace Modelo.Modelos
         public string cedula { get; set; }
         [Required]
         [StringLength(50)]
-        public string nombre { get; set; }
+        public string nombre { get; set; }  
         [Required]
         [StringLength(50)]
         public string apellidoPaterno { get; set; }
