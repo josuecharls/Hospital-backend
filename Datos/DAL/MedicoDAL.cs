@@ -28,7 +28,9 @@ namespace Datos.DAL
                     id = x.id,
                     cedula = x.cedula,
                     //nombre y apellido en una misma columna - la condicion para el apellido materno, ya que puede que sea null o no
-                    nombre = x.nombre + " " + x.apellidoPaterno + (x.apellidoMaterno != null ? (" " + x.apellidoMaterno) : " "),
+                    nombre = x.nombre,
+                    apellidoPaterno= x.apellidoPaterno,
+                    apellidoMaterno = x.apellidoMaterno != null ? (" " + x.apellidoMaterno) : " ",
                     esEspecialista = x.esEspecialista,
                 });
                 //aplicamos el criterio de busqueda
