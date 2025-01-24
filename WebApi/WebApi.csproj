@@ -117,6 +117,7 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\MedicoController.cs" />
+    <Compile Include="Controllers\PacienteController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -133,6 +134,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -141,7 +143,7 @@
       <Name>Comun</Name>
     </ProjectReference>
     <ProjectReference Include="..\Logica\Logica.csproj">
-      <Project>{93657bcf-1a16-42a1-a492-a8e810863448}</Project>
+      <Project>{C5734350-8A49-41EE-B8A0-BF50A9AE84CF}</Project>
       <Name>Logica</Name>
     </ProjectReference>
     <ProjectReference Include="..\Modelo\Modelo.csproj">
