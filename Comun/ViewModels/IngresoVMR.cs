@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace Comun.ViewModels
 {
-    internal class IngresoVMR
+    public class IngresoVMR
     {
+        public long id { get; set; }
+        public System.DateTime fecha { get; set; }
+        public int numeroSala { get; set; }
+        public int numeroCama { get; set; }
+        public string diagnostico { get; set; }
+        public string observacion { get; set; }
+        public long medicoId { get; set; }
+        public long pacienteId { get; set; }
+        public string medicoNombre { get; set; } // Nuevo
+        public string pacienteNombre { get; set; } // Nuevo
     }
 }

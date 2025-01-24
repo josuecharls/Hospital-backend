@@ -16,7 +16,7 @@ namespace Datos.DAL
 
             using (var db = DbConexion.Create())
             {
-                //query es la conexion a la bd, la condicion where me devuelve los medicos mientras que no esten borrados
+                //query es la conexion a la bd, la condicion where me devuelve los pacientes mientras que no esten borrados
                 //me muestra los que no son borrados
                 //select para crear nuevos objetos de tipo medico
                 //esa x es un objeto presente en la tabla Medico
@@ -85,7 +85,7 @@ namespace Datos.DAL
             return item;
         }
 
-        //Aquí si usamos la Entidad (Medico)
+        //Aquí si usamos la Entidad (Paciente)
         public static long Crear(Paciente item)
         {
             using (var db = DbConexion.Create())

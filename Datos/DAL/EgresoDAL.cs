@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Datos.DAL
 {
-    internal class EgresoDAL
+    public class EgresoDAL
     {
+
     }
 }

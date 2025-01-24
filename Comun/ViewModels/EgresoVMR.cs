@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Comun.ViewModels
 {
-    internal class EgresoVMR
+    public class EgresoVMR
     {
+        public long id { get; set; }
+        public System.DateTime fecha { get; set; }
+        public string tratamiento { get; set; }
+        public decimal monto { get; set; }
+        public long medicoId { get; set; }
+        public long ingresoId { get; set; }
     }
 }
